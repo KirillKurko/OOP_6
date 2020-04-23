@@ -47,3 +47,20 @@ istream& operator>> (istream& stream, Fullname fullname) {
     stream >> fullname.surname;
     return stream;
 }
+
+bool Fullname::operator== (const Fullname& other) {
+    return name == other.name and surname == other.surname;
+}
+
+bool Fullname::operator< (const Fullname& other) {
+    if (name > other.name) {
+        return false;
+    }
+    else if (name < other.name) {
+        return true;
+    }
+    else if (surname < other.surname) {
+        return true;
+    }
+    return false;
+}

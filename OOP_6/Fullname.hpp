@@ -24,6 +24,9 @@ public:
     Fullname& operator= (const Fullname& other);
     
     void printInformation() const;
+    
+    bool operator== (const Fullname& other);
+    bool operator< (const Fullname& other);
 };
 
 #endif
