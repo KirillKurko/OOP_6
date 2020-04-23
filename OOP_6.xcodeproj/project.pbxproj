@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		98910E142452154C00385F91 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98910E132452154C00385F91 /* main.cpp */; };
+		98910E21245215F100385F91 /* Fullname.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98910E1F245215F100385F91 /* Fullname.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		98910E102452154C00385F91 /* OOP_6 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OOP_6; sourceTree = BUILT_PRODUCTS_DIR; };
 		98910E132452154C00385F91 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		98910E1F245215F100385F91 /* Fullname.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Fullname.cpp; sourceTree = "<group>"; };
+		98910E20245215F100385F91 /* Fullname.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Fullname.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,7 @@
 		98910E1A2452155700385F91 /* SourceCode */ = {
 			isa = PBXGroup;
 			children = (
+				98910E1E245215DE00385F91 /* Utilities */,
 			);
 			name = SourceCode;
 			sourceTree = "<group>";
@@ -74,8 +78,25 @@
 		98910E1B2452155D00385F91 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				98910E1D245215D400385F91 /* Utilities */,
 			);
 			name = Headers;
+			sourceTree = "<group>";
+		};
+		98910E1D245215D400385F91 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				98910E20245215F100385F91 /* Fullname.hpp */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		98910E1E245215DE00385F91 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				98910E1F245215F100385F91 /* Fullname.cpp */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98910E142452154C00385F91 /* main.cpp in Sources */,
+				98910E21245215F100385F91 /* Fullname.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
