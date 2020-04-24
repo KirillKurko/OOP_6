@@ -4,6 +4,7 @@
 #include "Fullname.hpp"
 
 class Person {
+    friend bool operator< (const Person& first, const Person& second);
 protected:
     Fullname fullname;
     int age;
@@ -20,6 +21,8 @@ public:
     Person& operator= (const Person& other);
     
     void printInformation() const;
+    
+
 };
 
 #endif

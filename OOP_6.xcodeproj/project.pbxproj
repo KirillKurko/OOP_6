@@ -10,6 +10,7 @@
 		98910E142452154C00385F91 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98910E132452154C00385F91 /* main.cpp */; };
 		98910E21245215F100385F91 /* Fullname.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98910E1F245215F100385F91 /* Fullname.cpp */; };
 		98910E24245219D800385F91 /* Person.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98910E22245219D800385F91 /* Person.cpp */; };
+		98910E272452B71000385F91 /* Doctor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98910E252452B71000385F91 /* Doctor.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		98910E20245215F100385F91 /* Fullname.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Fullname.hpp; sourceTree = "<group>"; };
 		98910E22245219D800385F91 /* Person.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Person.cpp; sourceTree = "<group>"; };
 		98910E23245219D800385F91 /* Person.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Person.hpp; sourceTree = "<group>"; };
+		98910E252452B71000385F91 /* Doctor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Doctor.cpp; sourceTree = "<group>"; };
+		98910E262452B71000385F91 /* Doctor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Doctor.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				98910E22245219D800385F91 /* Person.cpp */,
+				98910E252452B71000385F91 /* Doctor.cpp */,
 				98910E1E245215DE00385F91 /* Utilities */,
 			);
 			name = SourceCode;
@@ -83,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				98910E23245219D800385F91 /* Person.hpp */,
+				98910E262452B71000385F91 /* Doctor.hpp */,
 				98910E1D245215D400385F91 /* Utilities */,
 			);
 			name = Headers;
@@ -162,6 +167,7 @@
 			files = (
 				98910E142452154C00385F91 /* main.cpp in Sources */,
 				98910E24245219D800385F91 /* Person.cpp in Sources */,
+				98910E272452B71000385F91 /* Doctor.cpp in Sources */,
 				98910E21245215F100385F91 /* Fullname.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

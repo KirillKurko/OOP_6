@@ -33,6 +33,10 @@ Person& Person::operator= (const Person& other) {
 
 
 void Person::printInformation() const {
-    cout << "Fullname: " << fullname << endl <<
-            "Age: " << age << endl;
+    cout << "\nИмя: " << fullname << endl <<
+            "Возраст: " << age << endl;
+}
+
+bool operator< (const Person& first, const Person& second) {
+    return first.age < second.age;
 }
