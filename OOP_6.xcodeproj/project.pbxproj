@@ -11,6 +11,7 @@
 		98910E21245215F100385F91 /* Fullname.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98910E1F245215F100385F91 /* Fullname.cpp */; };
 		98910E24245219D800385F91 /* Person.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98910E22245219D800385F91 /* Person.cpp */; };
 		98910E272452B71000385F91 /* Doctor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98910E252452B71000385F91 /* Doctor.cpp */; };
+		98910E2A2453126E00385F91 /* Clinic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98910E282453126E00385F91 /* Clinic.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		98910E23245219D800385F91 /* Person.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Person.hpp; sourceTree = "<group>"; };
 		98910E252452B71000385F91 /* Doctor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Doctor.cpp; sourceTree = "<group>"; };
 		98910E262452B71000385F91 /* Doctor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Doctor.hpp; sourceTree = "<group>"; };
+		98910E282453126E00385F91 /* Clinic.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Clinic.cpp; sourceTree = "<group>"; };
+		98910E292453126E00385F91 /* Clinic.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Clinic.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,7 @@
 			children = (
 				98910E22245219D800385F91 /* Person.cpp */,
 				98910E252452B71000385F91 /* Doctor.cpp */,
+				98910E282453126E00385F91 /* Clinic.cpp */,
 				98910E1E245215DE00385F91 /* Utilities */,
 			);
 			name = SourceCode;
@@ -88,6 +92,7 @@
 			children = (
 				98910E23245219D800385F91 /* Person.hpp */,
 				98910E262452B71000385F91 /* Doctor.hpp */,
+				98910E292453126E00385F91 /* Clinic.hpp */,
 				98910E1D245215D400385F91 /* Utilities */,
 			);
 			name = Headers;
@@ -167,6 +172,7 @@
 			files = (
 				98910E142452154C00385F91 /* main.cpp in Sources */,
 				98910E24245219D800385F91 /* Person.cpp in Sources */,
+				98910E2A2453126E00385F91 /* Clinic.cpp in Sources */,
 				98910E272452B71000385F91 /* Doctor.cpp in Sources */,
 				98910E21245215F100385F91 /* Fullname.cpp in Sources */,
 			);

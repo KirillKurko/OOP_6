@@ -21,8 +21,6 @@ public:
     Person& operator= (const Person& other);
     
     void printInformation() const;
-    
-
 };
 
 #endif
