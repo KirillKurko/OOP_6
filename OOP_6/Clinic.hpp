@@ -33,6 +33,8 @@ public:
     void printInformation() const;
     void printDoctors() const;
     void printPatients() const;
+    
+    void distributePatients();
 };
 
 #endif

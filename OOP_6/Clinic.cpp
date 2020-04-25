@@ -95,3 +95,11 @@ Doctor& Clinic::findDoctor() {
     });
     return *doctor;
 }
+
+void Clinic::distributePatients() {
+    while (!patients.empty()) {
+        auto doctor = findDoctor();
+        doctor.addPatient(patients.front());
+        patients.pop();
+    }
+}
