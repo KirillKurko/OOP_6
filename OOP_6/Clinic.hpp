@@ -26,8 +26,7 @@ public:
     Doctor& getDoctor(size_t index);
     
     void addPatient(const Person& patient);
-    void removePatient(const Person& patient);
-    Person& getPatient(size_t index);
+    void removePatient(size_t index);
     
     Clinic& operator= (const Clinic& other);
     
