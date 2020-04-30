@@ -26,7 +26,7 @@ void Clinic::setPatients(queue<Person> patients) {
 }
 
 void Clinic::addDoctor(const Doctor& doctor) {
-    
+    doctors.push_back(doctor);
 }
 
 void Clinic::removeDoctor(size_t index) {
@@ -90,15 +90,22 @@ void Clinic::printPatients() const {
 }
 
 Doctor& Clinic::findDoctor() {
-    auto doctor = min_element(doctors.begin(), doctors.end(), [] (auto lhs, auto rhs) -> bool {
-        return lhs.getCuredPeopleAmount() < rhs.getCuredPeopleAmount();
-    });
-    return *doctor;
+    auto index = 0;
+    for (auto i = 1; i < doctors.size(); ++i) {
+        if (doctors[index].getCuredPeopleAmount() > doctors[i].getCuredPeopleAmount()) {
+            index = i;
+        }
+    }
+    return doctors[index];
+//    auto doctor = min_element(doctors.begin(), doctors.end(), [] (auto lhs, auto rhs) -> bool {
+//        return lhs.getCuredPeopleAmount() < rhs.getCuredPeopleAmount();
+//    });
+//    return *doctor;
 }
 
 void Clinic::distributePatients() {
     while (!patients.empty()) {
-        auto doctor = findDoctor();
+        auto& doctor = findDoctor();
         doctor.addPatient(patients.front());
         patients.pop();
     }

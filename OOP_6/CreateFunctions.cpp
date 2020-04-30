@@ -21,7 +21,7 @@ vector<Doctor> CreateDoctors() {
 }
 
 Doctor CreateDoctor() {
-    auto person = CreatePeron();
+    auto person = CreatePerson();
     auto salary = 0.0f;
     cout << "Введите зарплату: ";
     cin >> salary;
@@ -43,13 +43,13 @@ queue<Person> CreatePatients() {
     cin.ignore();
     queue<Person> patients;
     for (auto i = 0; i < patientsAmount; ++i) {
-        auto patient = CreatePeron();
+        auto patient = CreatePerson();
         patients.push(patient);
     }
     return patients;
 }
 
-Person CreatePeron() {
+Person CreatePerson() {
     auto fullname = CreateFullname();
     auto age = 0;
     cout << "Введите возраст: ";

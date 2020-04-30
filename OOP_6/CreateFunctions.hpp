@@ -8,7 +8,7 @@ Clinic CreateClinic();
 std::vector<Doctor> CreateDoctors();
 Doctor CreateDoctor();
 std::queue<Person> CreatePatients();
-Person CreatePeron();
+Person CreatePerson();
 Fullname CreateFullname();
 
 #endif

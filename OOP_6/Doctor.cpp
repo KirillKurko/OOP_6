@@ -93,6 +93,7 @@ void Doctor::servePatients() {
         patients.pop();
     }
     cout << "Обслужено пациентов: " << patientsAmount << endl;
+    curedPeopleAmount += urgentPatientsAmount + patientsAmount;
 }
 
 
