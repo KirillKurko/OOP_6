@@ -69,3 +69,36 @@ Fullname CreateFullname() {
     cin.ignore();
     return Fullname(name, surname);
 }
+
+Date CreateDate() {
+    auto time = CreateTime();
+    auto day = 0;
+    cout << "Введите день: ";
+    cin >> day;
+    cin.ignore();
+    auto month = 0;
+    cout << "Введите месяц: ";
+    cin >> month;
+    cin.ignore();
+    auto year = 0;
+    cout << "Введите год: ";
+    cin >> year;
+    cin.ignore();
+    return Date(time, day, month, year);
+}
+
+Time CreateTime() {
+    auto hours = 0;
+    cout << "Введите часы: ";
+    cin >> hours;
+    cin.ignore();
+    auto minutes = 0;
+    cout << "Введите минуты: ";
+    cin >> minutes;
+    cin.ignore();
+    auto seconds = 0;
+    cout << "Введите секунды: ";
+    cin >> seconds;
+    cin.ignore();
+    return Time(hours, minutes, seconds);
+}
