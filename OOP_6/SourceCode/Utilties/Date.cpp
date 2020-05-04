@@ -75,7 +75,13 @@ std::ostream& operator<< (std::ostream& out, const Date& date) {
 }
 
 std::istream& operator>> (std::istream& in, Date& date) {
-    in >> date.time >> date.day >> date.month >> date.year;
+    in >> date.time;
+    in.ignore(1);
+    in >> date.day;
+    in.ignore(1);
+    in >> date.month;
+    in.ignore(1);
+    in >> date.year;
     return in;
 }
 

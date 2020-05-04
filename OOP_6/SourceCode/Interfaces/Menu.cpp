@@ -6,6 +6,7 @@ void ClinicMenu(Clinic& clinic) {
     auto selection = 0;
     while (true) {
         cout << "\n1 - Доктора\n2 - Пациенты\n3 - Просмотреть информацию\n4 - Распределить пациентов по докторам\n5 - Назад" << endl;
+        cout << "Выберите пункт меню: ";
         cin >> selection;
         cin.ignore();
         switch (selection) {
@@ -14,6 +15,7 @@ void ClinicMenu(Clinic& clinic) {
                 break;
             case 2:
                 PatientsClinicSubmenu(clinic);
+                break;
             case 3:
                 ViewClinicSubmenu(clinic);
                 break;
@@ -31,7 +33,7 @@ void DoctorsClinicSubmenu(Clinic& clinic) {
     auto selection = 0;
     while (true) {
         cout << "\n1 - Добавить доктора\n2 - Удалить доктора\n3 - Назад" << endl;
-        cout << "Выберите пунтк меню: ";
+        cout << "Выберите пункт меню: ";
         cin >> selection;
         cin.ignore();
         switch (selection) {
@@ -120,21 +122,26 @@ void ViewClinicSubmenu(const Clinic& clinic) {
 void DoctorMenu(Doctor& doctor) {
     auto selection = 0;
     while (true) {
-        cout << "\n1 - Обслужить пациентов\n2 - Просмотреть пациентов\n3 - Личный кабинет\n4 - Назад" << endl;
+        cout << "\n1 - Добавить срочного пациента\n2 - Обслужить пациентов\n3 - Просмотреть пациентов\n4 - Личный кабинет\n5 - Назад" << endl;
         cout << "Выберите пункт меню: ";
         cin >> selection;
         cin.ignore();
         switch (selection) {
-            case 1:
+            case 1: {
+                auto urgentPatient = CreatePerson();
+                doctor.addUrgentPatient(urgentPatient);
+                break;
+            }
+            case 2:
                 doctor.servePatients();
                 break;
-            case 2:
+            case 3:
                 ViewDoctorSubmenu(doctor);
                 break;
-            case 3:
+            case 4:
                 PersonalArea(doctor);
                 break;
-            case 4: default:
+            case 5: default:
                 cout << "Выход из меню доктора" << endl;
                 return;
         }

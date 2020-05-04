@@ -36,7 +36,6 @@
 		98DC70A8245FF3A700A6CC4F /* Doctor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Doctor.hpp; sourceTree = "<group>"; };
 		98DC70A9245FF3A700A6CC4F /* Person.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Person.hpp; sourceTree = "<group>"; };
 		98DC70AA245FF3A700A6CC4F /* Clinic.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Clinic.hpp; sourceTree = "<group>"; };
-		98DC70AB245FF3B600A6CC4F /* CreateFunctions.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CreateFunctions.hpp; sourceTree = "<group>"; };
 		98DC70AC245FF3B600A6CC4F /* Time.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Time.hpp; sourceTree = "<group>"; };
 		98DC70AD245FF3B600A6CC4F /* Date.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Date.hpp; sourceTree = "<group>"; };
 		98DC70AE245FF3B600A6CC4F /* Fullname.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Fullname.hpp; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		98DC70B8245FF3CF00A6CC4F /* Date.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Date.cpp; sourceTree = "<group>"; };
 		98DC70B9245FF3CF00A6CC4F /* Time.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Time.cpp; sourceTree = "<group>"; };
 		98DC70BE245FF3D500A6CC4F /* Menu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Menu.cpp; sourceTree = "<group>"; };
+		98DC70C4245FF5D400A6CC4F /* CreateFunctions.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CreateFunctions.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,8 +148,8 @@
 		98DC70A4245FF34500A6CC4F /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				98DC70AB245FF3B600A6CC4F /* CreateFunctions.hpp */,
 				98DC70AD245FF3B600A6CC4F /* Date.hpp */,
+				98DC70C4245FF5D400A6CC4F /* CreateFunctions.hpp */,
 				98DC70AE245FF3B600A6CC4F /* Fullname.hpp */,
 				98DC70AC245FF3B600A6CC4F /* Time.hpp */,
 			);

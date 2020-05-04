@@ -63,7 +63,11 @@ std::ostream& operator<< (std::ostream& out, const Time& time) {
 }
 
 std::istream& operator>> (std::istream& in, Time& time) {
-    in >> time.hours >> time.minutes >> time.seconds;
+    in >> time.hours;
+    in.ignore(1);
+    in >> time.minutes;
+    in.ignore(1);
+    in >> time.seconds;
     return in;
 }
 

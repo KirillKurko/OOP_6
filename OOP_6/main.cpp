@@ -1,6 +1,5 @@
 #include <iostream>
-#include "Menu.hpp"
-#include "CreateFunctions.hpp"
+#include "Headers/Interfaces/Menu.hpp"
 
 using namespace std;
 

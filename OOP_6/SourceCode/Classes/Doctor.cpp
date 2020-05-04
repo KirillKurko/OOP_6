@@ -5,7 +5,7 @@ using namespace std;
 Doctor::Doctor(Fullname fullname, int age, float salary, int experience,
                int curedPeopleAmount,
                stack<Person> urgentPatients,
-               priority_queue<pair<Date, Person>> patients) : Person(fullname, age) {
+               priority_queue<pair<Date, Person>, vector<pair<Date, Person>>, Comparator> patients) : Person(fullname, age) {
     this->salary = salary;
     this->experience = experience;
     this->curedPeopleAmount = curedPeopleAmount;
@@ -37,7 +37,7 @@ stack<Person> Doctor::getUrgentPatients() const {
     return urgentPatients;
 }
 
-priority_queue<pair<Date, Person>> Doctor::getPatients() const {
+priority_queue<pair<Date, Person>, vector<pair<Date, Person>>, Comparator> Doctor::getPatients() const {
     return patients;
 }
 
@@ -57,13 +57,36 @@ void Doctor::setUrgentPatients(stack<Person> urgentPatients) {
     this->urgentPatients = urgentPatients;
 }
 
-void Doctor::setPatients(priority_queue<pair<Date, Person>> patients) {
+void Doctor::setPatients(priority_queue<pair<Date, Person>, vector<pair<Date, Person>>, Comparator> patients) {
     this->patients = patients;
 }
 
 void Doctor::addPatient(const Person& patient) {
-    auto date = CreateDate();
-    patients.push(patient);
+    bool isFreeDate = false;
+    Date date;
+    cout << "Введите дату приема: ";
+    cin >> date;
+    cin.ignore();
+    while (!isFreeDate) {
+        isFreeDate = true;
+        auto patientsCopy = patients;
+        while (!patientsCopy.empty()) {
+            if (patientsCopy.top().first == date) {
+                cout << "Ошибка: дата уже занята" << endl;
+                isFreeDate = false;
+                break;
+            }
+            patientsCopy.pop();
+        }
+        if (isFreeDate) {
+            break;
+        }
+        cout << "Повторите ввод даты: ";
+        cin >> date;
+        cin.ignore();
+    }
+    patients.push(make_pair(date, patient));
+    cout << "Пациент добавлен" << endl;
 }
 
 void Doctor::addUrgentPatient(const Person& patient) {

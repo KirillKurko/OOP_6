@@ -74,14 +74,14 @@ void Clinic::printInformation() const {
 }
 
 void Clinic::printDoctors() const {
-    cout << "Всего " << doctors.size() << " докторов" << endl;
+    cout << "\nВсего " << doctors.size() << " докторов" << endl;
     for (const auto& doctor: doctors) {
         doctor.printInformation();
     }
 }
 
 void Clinic::printPatients() const {
-    cout << "Всего " << patients.size() << " людей в очереди" << endl;
+    cout << "\nВсего " << patients.size() << " людей в очереди" << endl;
     auto patientsCopy = patients;
     while (!patientsCopy.empty()) {
         patientsCopy.front().printInformation();
@@ -97,10 +97,6 @@ Doctor& Clinic::findDoctor() {
         }
     }
     return doctors[index];
-//    auto doctor = min_element(doctors.begin(), doctors.end(), [] (auto lhs, auto rhs) -> bool {
-//        return lhs.getCuredPeopleAmount() < rhs.getCuredPeopleAmount();
-//    });
-//    return *doctor;
 }
 
 void Clinic::distributePatients() {

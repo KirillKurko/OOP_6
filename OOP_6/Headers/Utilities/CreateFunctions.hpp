@@ -5,8 +5,14 @@
 #include <vector>
 #include <queue>
 #include "../Classes/Clinic.hpp"
-#include "../Utilities/Date.hpp"
 
 Clinic CreateClinic();
+std::vector<Doctor> CreateDoctors();
+Doctor CreateDoctor();
+std::queue<Person> CreatePatients();
+Person CreatePerson();
+Fullname CreateFullname();
+Date CreateDate();
+Time CreateTime();
 
 #endif
