@@ -1,7 +1,7 @@
 #ifndef Person_hpp
 #define Person_hpp
 
-#include "Fullname.hpp"
+#include "../Utilities/Fullname.hpp"
 
 class Person {
     friend bool operator< (const Person& first, const Person& second);

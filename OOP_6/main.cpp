@@ -1,6 +1,5 @@
 #include <iostream>
 #include "Menu.hpp"
-#include "Clinic.hpp"
 #include "CreateFunctions.hpp"
 
 using namespace std;

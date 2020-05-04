@@ -5,7 +5,7 @@ using namespace std;
 Doctor::Doctor(Fullname fullname, int age, float salary, int experience,
                int curedPeopleAmount,
                stack<Person> urgentPatients,
-               priority_queue<Person> patients) : Person(fullname, age) {
+               priority_queue<pair<Date, Person>> patients) : Person(fullname, age) {
     this->salary = salary;
     this->experience = experience;
     this->curedPeopleAmount = curedPeopleAmount;
@@ -37,7 +37,7 @@ stack<Person> Doctor::getUrgentPatients() const {
     return urgentPatients;
 }
 
-priority_queue<Person> Doctor::getPatients() const {
+priority_queue<pair<Date, Person>> Doctor::getPatients() const {
     return patients;
 }
 
@@ -57,11 +57,12 @@ void Doctor::setUrgentPatients(stack<Person> urgentPatients) {
     this->urgentPatients = urgentPatients;
 }
 
-void Doctor::setPatients(priority_queue<Person> patients) {
+void Doctor::setPatients(priority_queue<pair<Date, Person>> patients) {
     this->patients = patients;
 }
 
 void Doctor::addPatient(const Person& patient) {
+    auto date = CreateDate();
     patients.push(patient);
 }
 
@@ -89,7 +90,7 @@ void Doctor::servePatients() {
     
     auto patientsAmount = patients.size();
     while (!patients.empty()) {
-        patients.top().printInformation();
+        patients.top().second.printInformation();
         patients.pop();
     }
     cout << "Обслужено пациентов: " << patientsAmount << endl;
@@ -117,7 +118,7 @@ void Doctor::printUrgentPatients() const {
 void Doctor::printPatients() const {
     auto printCopy =  patients;
     while (!printCopy.empty()) {
-        printCopy.top().printInformation();
+        printCopy.top().second.printInformation();
         printCopy.pop();
     }
 }

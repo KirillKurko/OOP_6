@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		98318B9E245FE276001F4E85 /* Date.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98318B9C245FE276001F4E85 /* Date.cpp */; };
-		98318BA1245FE2AA001F4E85 /* Time.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98318B9F245FE2AA001F4E85 /* Time.cpp */; };
-		98318BA6245FE44F001F4E85 /* Menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98318BA4245FE44F001F4E85 /* Menu.cpp */; };
-		98422A13245422D400536679 /* CreateFunctions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98422A11245422D400536679 /* CreateFunctions.cpp */; };
-		98910E142452154C00385F91 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98910E132452154C00385F91 /* main.cpp */; };
-		98910E21245215F100385F91 /* Fullname.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98910E1F245215F100385F91 /* Fullname.cpp */; };
-		98910E24245219D800385F91 /* Person.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98910E22245219D800385F91 /* Person.cpp */; };
-		98910E272452B71000385F91 /* Doctor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98910E252452B71000385F91 /* Doctor.cpp */; };
-		98910E2A2453126E00385F91 /* Clinic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98910E282453126E00385F91 /* Clinic.cpp */; };
+		98DC7084245FED9A00A6CC4F /* Clinic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98DC7081245FED9A00A6CC4F /* Clinic.cpp */; };
+		98DC7085245FED9A00A6CC4F /* Doctor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98DC7082245FED9A00A6CC4F /* Doctor.cpp */; };
+		98DC7086245FED9A00A6CC4F /* Person.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98DC7083245FED9A00A6CC4F /* Person.cpp */; };
+		98DC7089245FEDAC00A6CC4F /* Menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98DC7088245FEDAB00A6CC4F /* Menu.cpp */; };
+		98DC708E245FEDC300A6CC4F /* Time.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98DC708A245FEDC300A6CC4F /* Time.cpp */; };
+		98DC708F245FEDC300A6CC4F /* Date.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98DC708B245FEDC300A6CC4F /* Date.cpp */; };
+		98DC7090245FEDC300A6CC4F /* Fullname.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98DC708C245FEDC300A6CC4F /* Fullname.cpp */; };
+		98DC7091245FEDC300A6CC4F /* CreateFunctions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98DC708D245FEDC300A6CC4F /* CreateFunctions.cpp */; };
+		98DC7093245FEDF700A6CC4F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98DC7092245FEDF700A6CC4F /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,24 +31,24 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		98318B9C245FE276001F4E85 /* Date.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Date.cpp; sourceTree = "<group>"; };
-		98318B9D245FE276001F4E85 /* Date.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Date.hpp; sourceTree = "<group>"; };
-		98318B9F245FE2AA001F4E85 /* Time.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Time.cpp; sourceTree = "<group>"; };
-		98318BA0245FE2AA001F4E85 /* Time.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Time.hpp; sourceTree = "<group>"; };
-		98318BA4245FE44F001F4E85 /* Menu.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Menu.cpp; sourceTree = "<group>"; };
-		98318BA5245FE44F001F4E85 /* Menu.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Menu.hpp; sourceTree = "<group>"; };
-		98422A11245422D400536679 /* CreateFunctions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CreateFunctions.cpp; sourceTree = "<group>"; };
-		98422A12245422D400536679 /* CreateFunctions.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CreateFunctions.hpp; sourceTree = "<group>"; };
 		98910E102452154C00385F91 /* OOP_6 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OOP_6; sourceTree = BUILT_PRODUCTS_DIR; };
-		98910E132452154C00385F91 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		98910E1F245215F100385F91 /* Fullname.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Fullname.cpp; sourceTree = "<group>"; };
-		98910E20245215F100385F91 /* Fullname.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Fullname.hpp; sourceTree = "<group>"; };
-		98910E22245219D800385F91 /* Person.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Person.cpp; sourceTree = "<group>"; };
-		98910E23245219D800385F91 /* Person.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Person.hpp; sourceTree = "<group>"; };
-		98910E252452B71000385F91 /* Doctor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Doctor.cpp; sourceTree = "<group>"; };
-		98910E262452B71000385F91 /* Doctor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Doctor.hpp; sourceTree = "<group>"; };
-		98910E282453126E00385F91 /* Clinic.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Clinic.cpp; sourceTree = "<group>"; };
-		98910E292453126E00385F91 /* Clinic.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Clinic.hpp; sourceTree = "<group>"; };
+		98DC7079245FED6900A6CC4F /* Doctor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Doctor.hpp; path = Headers/Classes/Doctor.hpp; sourceTree = "<group>"; };
+		98DC707A245FED6900A6CC4F /* Person.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Person.hpp; path = Headers/Classes/Person.hpp; sourceTree = "<group>"; };
+		98DC707B245FED6900A6CC4F /* Clinic.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Clinic.hpp; path = Headers/Classes/Clinic.hpp; sourceTree = "<group>"; };
+		98DC707C245FED7F00A6CC4F /* Menu.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Menu.hpp; path = Headers/Interfaces/Menu.hpp; sourceTree = "<group>"; };
+		98DC707E245FED8E00A6CC4F /* Time.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Time.hpp; path = Headers/Utilities/Time.hpp; sourceTree = "<group>"; };
+		98DC707F245FED8E00A6CC4F /* Date.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Date.hpp; path = Headers/Utilities/Date.hpp; sourceTree = "<group>"; };
+		98DC7080245FED8E00A6CC4F /* Fullname.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Fullname.hpp; path = Headers/Utilities/Fullname.hpp; sourceTree = "<group>"; };
+		98DC7081245FED9A00A6CC4F /* Clinic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Clinic.cpp; path = SourceCode/Classes/Clinic.cpp; sourceTree = "<group>"; };
+		98DC7082245FED9A00A6CC4F /* Doctor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Doctor.cpp; path = SourceCode/Classes/Doctor.cpp; sourceTree = "<group>"; };
+		98DC7083245FED9A00A6CC4F /* Person.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Person.cpp; path = SourceCode/Classes/Person.cpp; sourceTree = "<group>"; };
+		98DC7088245FEDAB00A6CC4F /* Menu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Menu.cpp; path = SourceCode/Interfaces/Menu.cpp; sourceTree = "<group>"; };
+		98DC708A245FEDC300A6CC4F /* Time.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Time.cpp; path = SourceCode/Utilities/Time.cpp; sourceTree = "<group>"; };
+		98DC708B245FEDC300A6CC4F /* Date.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Date.cpp; path = SourceCode/Utilities/Date.cpp; sourceTree = "<group>"; };
+		98DC708C245FEDC300A6CC4F /* Fullname.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Fullname.cpp; path = SourceCode/Utilities/Fullname.cpp; sourceTree = "<group>"; };
+		98DC708D245FEDC300A6CC4F /* CreateFunctions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CreateFunctions.cpp; path = SourceCode/Utilities/CreateFunctions.cpp; sourceTree = "<group>"; };
+		98DC7092245FEDF700A6CC4F /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		98DC7095245FEF5F00A6CC4F /* CreateFunctions.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = CreateFunctions.hpp; path = Headers/Utilities/CreateFunctions.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +65,7 @@
 		98318BA3245FE43D001F4E85 /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
-				98318BA5245FE44F001F4E85 /* Menu.hpp */,
+				98DC707C245FED7F00A6CC4F /* Menu.hpp */,
 			);
 			name = Interfaces;
 			sourceTree = "<group>";
@@ -73,7 +73,7 @@
 		98318BA7245FE454001F4E85 /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
-				98318BA4245FE44F001F4E85 /* Menu.cpp */,
+				98DC7088245FEDAB00A6CC4F /* Menu.cpp */,
 			);
 			name = Interfaces;
 			sourceTree = "<group>";
@@ -81,9 +81,9 @@
 		98318BA9245FE4A2001F4E85 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				98910E23245219D800385F91 /* Person.hpp */,
-				98910E262452B71000385F91 /* Doctor.hpp */,
-				98910E292453126E00385F91 /* Clinic.hpp */,
+				98DC707B245FED6900A6CC4F /* Clinic.hpp */,
+				98DC7079245FED6900A6CC4F /* Doctor.hpp */,
+				98DC707A245FED6900A6CC4F /* Person.hpp */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -91,6 +91,9 @@
 		98318BAA245FE4B6001F4E85 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				98DC7081245FED9A00A6CC4F /* Clinic.cpp */,
+				98DC7082245FED9A00A6CC4F /* Doctor.cpp */,
+				98DC7083245FED9A00A6CC4F /* Person.cpp */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -114,9 +117,9 @@
 		98910E122452154C00385F91 /* OOP_6 */ = {
 			isa = PBXGroup;
 			children = (
+				98DC7092245FEDF700A6CC4F /* main.cpp */,
 				98910E1B2452155D00385F91 /* Headers */,
 				98910E1A2452155700385F91 /* SourceCode */,
-				98910E132452154C00385F91 /* main.cpp */,
 			);
 			path = OOP_6;
 			sourceTree = "<group>";
@@ -124,9 +127,6 @@
 		98910E1A2452155700385F91 /* SourceCode */ = {
 			isa = PBXGroup;
 			children = (
-				98910E22245219D800385F91 /* Person.cpp */,
-				98910E252452B71000385F91 /* Doctor.cpp */,
-				98910E282453126E00385F91 /* Clinic.cpp */,
 				98318BAA245FE4B6001F4E85 /* Classes */,
 				98318BA7245FE454001F4E85 /* Interfaces */,
 				98910E1E245215DE00385F91 /* Utilities */,
@@ -147,10 +147,10 @@
 		98910E1D245215D400385F91 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				98422A12245422D400536679 /* CreateFunctions.hpp */,
-				98910E20245215F100385F91 /* Fullname.hpp */,
-				98318B9D245FE276001F4E85 /* Date.hpp */,
-				98318BA0245FE2AA001F4E85 /* Time.hpp */,
+				98DC707F245FED8E00A6CC4F /* Date.hpp */,
+				98DC7080245FED8E00A6CC4F /* Fullname.hpp */,
+				98DC707E245FED8E00A6CC4F /* Time.hpp */,
+				98DC7095245FEF5F00A6CC4F /* CreateFunctions.hpp */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -158,10 +158,10 @@
 		98910E1E245215DE00385F91 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				98422A11245422D400536679 /* CreateFunctions.cpp */,
-				98910E1F245215F100385F91 /* Fullname.cpp */,
-				98318B9C245FE276001F4E85 /* Date.cpp */,
-				98318B9F245FE2AA001F4E85 /* Time.cpp */,
+				98DC708D245FEDC300A6CC4F /* CreateFunctions.cpp */,
+				98DC708B245FEDC300A6CC4F /* Date.cpp */,
+				98DC708C245FEDC300A6CC4F /* Fullname.cpp */,
+				98DC708A245FEDC300A6CC4F /* Time.cpp */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -222,15 +222,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98318BA6245FE44F001F4E85 /* Menu.cpp in Sources */,
-				98318BA1245FE2AA001F4E85 /* Time.cpp in Sources */,
-				98910E142452154C00385F91 /* main.cpp in Sources */,
-				98910E24245219D800385F91 /* Person.cpp in Sources */,
-				98910E2A2453126E00385F91 /* Clinic.cpp in Sources */,
-				98910E272452B71000385F91 /* Doctor.cpp in Sources */,
-				98318B9E245FE276001F4E85 /* Date.cpp in Sources */,
-				98910E21245215F100385F91 /* Fullname.cpp in Sources */,
-				98422A13245422D400536679 /* CreateFunctions.cpp in Sources */,
+				98DC7085245FED9A00A6CC4F /* Doctor.cpp in Sources */,
+				98DC7091245FEDC300A6CC4F /* CreateFunctions.cpp in Sources */,
+				98DC7093245FEDF700A6CC4F /* main.cpp in Sources */,
+				98DC7086245FED9A00A6CC4F /* Person.cpp in Sources */,
+				98DC7089245FEDAC00A6CC4F /* Menu.cpp in Sources */,
+				98DC708F245FEDC300A6CC4F /* Date.cpp in Sources */,
+				98DC7090245FEDC300A6CC4F /* Fullname.cpp in Sources */,
+				98DC7084245FED9A00A6CC4F /* Clinic.cpp in Sources */,
+				98DC708E245FEDC300A6CC4F /* Time.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

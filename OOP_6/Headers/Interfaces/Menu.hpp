@@ -1,8 +1,8 @@
 #ifndef Menu_hpp
 #define Menu_hpp
 
-#include "Clinic.hpp"
-#include "CreateFunctions.hpp"
+#include "../Classes/Clinic.hpp"
+#include "../Utilities/CreateFunctions.hpp"
 
 void ClinicMenu(Clinic& clinic);
 void DoctorsClinicSubmenu(Clinic& clinic);

@@ -50,12 +50,6 @@ bool Time::operator> (const Time& other) const {
     seconds > other.seconds ? true : false;
 }
 
-bool Time::operator< (const Time& other) const {
-    return (hours < other.hours) ? true :
-    (minutes < other.minutes) ? true :
-    (seconds < other.seconds) ? true : false;
-}
-
 Time& Time::operator= (const Time& other) {
     hours = other.hours;
     minutes = other.minutes;
@@ -73,3 +67,8 @@ std::istream& operator>> (std::istream& in, Time& time) {
     return in;
 }
 
+bool operator< (const Time& first, const Time& second) {
+    return (first.hours < second.hours) ? true :
+    (first.minutes < second.minutes) ? true :
+    (first.seconds < second.seconds) ? true : false;
+}

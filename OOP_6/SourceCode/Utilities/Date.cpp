@@ -61,13 +61,6 @@ bool Date::operator> (const Date& other) const {
     time > other.time ? true : false;
 }
 
-bool Date::operator< (const Date& other) const {
-    return year < other.year ? true :
-    month < other.month ? true :
-    day < other.day ? true :
-    time < other.time ? true : false;
-}
-
 Date& Date::operator=(const Date& other) {
     time = other.time;
     day = other.day;
@@ -84,4 +77,11 @@ std::ostream& operator<< (std::ostream& out, const Date& date) {
 std::istream& operator>> (std::istream& in, Date& date) {
     in >> date.time >> date.day >> date.month >> date.year;
     return in;
+}
+
+bool operator< (const Date& first, const Date& second) {
+    return first.year < second.year ? true :
+    first.month < second.month ? true :
+    first.day < second.day ? true :
+    first.time < second.time ? true : false;
 }
