@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		98318B9E245FE276001F4E85 /* Date.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98318B9C245FE276001F4E85 /* Date.cpp */; };
 		98318BA1245FE2AA001F4E85 /* Time.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98318B9F245FE2AA001F4E85 /* Time.cpp */; };
+		98318BA6245FE44F001F4E85 /* Menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98318BA4245FE44F001F4E85 /* Menu.cpp */; };
 		98422A13245422D400536679 /* CreateFunctions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98422A11245422D400536679 /* CreateFunctions.cpp */; };
 		98910E142452154C00385F91 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98910E132452154C00385F91 /* main.cpp */; };
 		98910E21245215F100385F91 /* Fullname.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98910E1F245215F100385F91 /* Fullname.cpp */; };
@@ -34,6 +35,8 @@
 		98318B9D245FE276001F4E85 /* Date.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Date.hpp; sourceTree = "<group>"; };
 		98318B9F245FE2AA001F4E85 /* Time.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Time.cpp; sourceTree = "<group>"; };
 		98318BA0245FE2AA001F4E85 /* Time.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Time.hpp; sourceTree = "<group>"; };
+		98318BA4245FE44F001F4E85 /* Menu.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Menu.cpp; sourceTree = "<group>"; };
+		98318BA5245FE44F001F4E85 /* Menu.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Menu.hpp; sourceTree = "<group>"; };
 		98422A11245422D400536679 /* CreateFunctions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CreateFunctions.cpp; sourceTree = "<group>"; };
 		98422A12245422D400536679 /* CreateFunctions.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CreateFunctions.hpp; sourceTree = "<group>"; };
 		98910E102452154C00385F91 /* OOP_6 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OOP_6; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +62,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		98318BA3245FE43D001F4E85 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				98318BA5245FE44F001F4E85 /* Menu.hpp */,
+			);
+			name = Interfaces;
+			sourceTree = "<group>";
+		};
+		98318BA7245FE454001F4E85 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				98318BA4245FE44F001F4E85 /* Menu.cpp */,
+			);
+			name = Interfaces;
+			sourceTree = "<group>";
+		};
+		98318BA9245FE4A2001F4E85 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				98910E23245219D800385F91 /* Person.hpp */,
+				98910E262452B71000385F91 /* Doctor.hpp */,
+				98910E292453126E00385F91 /* Clinic.hpp */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		98318BAA245FE4B6001F4E85 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		98910E072452154C00385F91 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +127,8 @@
 				98910E22245219D800385F91 /* Person.cpp */,
 				98910E252452B71000385F91 /* Doctor.cpp */,
 				98910E282453126E00385F91 /* Clinic.cpp */,
+				98318BAA245FE4B6001F4E85 /* Classes */,
+				98318BA7245FE454001F4E85 /* Interfaces */,
 				98910E1E245215DE00385F91 /* Utilities */,
 			);
 			name = SourceCode;
@@ -99,9 +137,8 @@
 		98910E1B2452155D00385F91 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
-				98910E23245219D800385F91 /* Person.hpp */,
-				98910E262452B71000385F91 /* Doctor.hpp */,
-				98910E292453126E00385F91 /* Clinic.hpp */,
+				98318BA9245FE4A2001F4E85 /* Classes */,
+				98318BA3245FE43D001F4E85 /* Interfaces */,
 				98910E1D245215D400385F91 /* Utilities */,
 			);
 			name = Headers;
@@ -185,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98318BA6245FE44F001F4E85 /* Menu.cpp in Sources */,
 				98318BA1245FE2AA001F4E85 /* Time.cpp in Sources */,
 				98910E142452154C00385F91 /* main.cpp in Sources */,
 				98910E24245219D800385F91 /* Person.cpp in Sources */,
